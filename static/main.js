@@ -154,7 +154,8 @@ const showchat = () => {
     }
 };
 
-const addVideoStream = (videoEl, stream, name) => {
+// const addVideoStream = (videoEl, stream, name) => {
+    const addVideoStream = (videoEl, stream, name) => {
     videoEl.srcObject = stream;
     videoEl.addEventListener("loadedmetadata", () => {
         videoEl.play();
